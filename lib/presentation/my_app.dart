@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_market_app/presentation/screens/home_screen.dart';
 import 'package:food_market_app/presentation/screens/splash_screen.dart';
 
 class MyApp extends StatelessWidget {
@@ -13,6 +14,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const SplashScreen(),
+      routes: {
+        HomeScreen.route: (context) => const HomeScreen(),
+      },
     );
   }
 }

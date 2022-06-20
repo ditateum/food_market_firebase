@@ -46,6 +46,12 @@ TextStyle subTitleRegular = GoogleFonts.poppins(
   fontWeight: regular,
 );
 
+TextStyle subTitleRegular12 = GoogleFonts.poppins(
+  color: kGreyColor,
+  fontWeight: regular,
+  fontSize: Sized.p12,
+);
+
 TextStyle subTitleLight = subTitleRegular.copyWith(
   fontWeight: light,
 );

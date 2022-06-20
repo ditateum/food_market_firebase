@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class Sized {
   static const p4 = 4.0;
+  static const p6 = 6.0;
   static const p8 = 8.0;
   static const p12 = 12.0;
   static const p16 = 16.0;
@@ -17,6 +18,7 @@ class Sized {
 
 /// constant gaps width
 const gapW4 = SizedBox(width: Sized.p4);
+const gapW6 = SizedBox(width: Sized.p6);
 const gapW8 = SizedBox(width: Sized.p8);
 const gapW12 = SizedBox(width: Sized.p12);
 const gapW16 = SizedBox(width: Sized.p16);
@@ -29,6 +31,7 @@ const gapW64 = SizedBox(width: Sized.p64);
 
 /// constant gaps height
 const gapH4 = SizedBox(height: Sized.p4);
+const gapH6 = SizedBox(height: Sized.p6);
 const gapH8 = SizedBox(height: Sized.p8);
 const gapH12 = SizedBox(height: Sized.p12);
 const gapH16 = SizedBox(height: Sized.p16);
