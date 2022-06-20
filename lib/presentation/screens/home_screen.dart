@@ -37,6 +37,37 @@ class HomeScreen extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: kWhiteColor,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+            label: 'Home',
+            icon: Image.asset(
+              'assets/images/ic_home.png',
+              width: Sized.p32,
+              height: Sized.p32,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: 'Cart',
+            icon: Image.asset(
+              'assets/images/ic_order_normal.png',
+              width: Sized.p32,
+              height: Sized.p32,
+            ),
+          ),
+          BottomNavigationBarItem(
+            label: 'Profile',
+            icon: Image.asset(
+              'assets/images/ic_profile_normal.png',
+              width: Sized.p32,
+              height: Sized.p32,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
