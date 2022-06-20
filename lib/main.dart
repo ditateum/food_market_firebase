@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_market_app/presentation/my_app.dart';
 
 void main() {
-  runApp(const MyApp());
-
   FlutterError.onError = (FlutterErrorDetails details) {
     FlutterError.presentError(details);
   };
@@ -16,4 +14,5 @@ void main() {
       body: Center(child: Text(details.toString())),
     );
   };
+  runApp(const MyApp());
 }
