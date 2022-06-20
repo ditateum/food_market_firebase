@@ -8,7 +8,7 @@ class StarRating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final int goldStar = rating.floor();
+    final int goldStar = rating.round();
     final int greyStar = 5 - goldStar;
 
     return Row(
