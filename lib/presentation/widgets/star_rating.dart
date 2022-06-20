@@ -8,61 +8,36 @@ class StarRating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final int goldStar = rating.floor();
+    final int greyStar = 5 - goldStar;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
           children: [
-            Container(
-              width: Sized.p16,
-              height: Sized.p16,
-              margin: const EdgeInsets.only(right: 2),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/gold_star.png'),
+            for (int i = 1; i <= goldStar; i++)
+              Container(
+                width: Sized.p16,
+                height: Sized.p16,
+                margin: const EdgeInsets.only(right: 2),
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/gold_star.png'),
+                  ),
                 ),
               ),
-            ),
-            Container(
-              width: Sized.p16,
-              height: Sized.p16,
-              margin: const EdgeInsets.only(right: 2),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/gold_star.png'),
+            for (int i = 1; i <= greyStar; i++)
+              Container(
+                width: Sized.p16,
+                height: Sized.p16,
+                margin: const EdgeInsets.only(right: 2),
+                decoration: const BoxDecoration(
+                  image: DecorationImage(
+                    image: AssetImage('assets/images/grey_star.png'),
+                  ),
                 ),
               ),
-            ),
-            Container(
-              width: Sized.p16,
-              height: Sized.p16,
-              margin: const EdgeInsets.only(right: 2),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/gold_star.png'),
-                ),
-              ),
-            ),
-            Container(
-              width: Sized.p16,
-              height: Sized.p16,
-              margin: const EdgeInsets.only(right: 2),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/gold_star.png'),
-                ),
-              ),
-            ),
-            Container(
-              width: Sized.p16,
-              height: Sized.p16,
-              margin: const EdgeInsets.only(right: 2),
-              decoration: const BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/grey_star.png'),
-                ),
-              ),
-            ),
           ],
         ),
         Text(

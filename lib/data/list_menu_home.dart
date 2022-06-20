@@ -3,7 +3,7 @@ List homeMenus = [
     'id': 'menu_01',
     'title': 'Cherry Healthy',
     'image_url': 'assets/images/menu_home1.png',
-    'rating': 4.5,
+    'rating': 3.5,
   },
   {
     'id': 'menu_02',
