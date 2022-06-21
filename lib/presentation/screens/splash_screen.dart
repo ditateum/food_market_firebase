@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:food_market_app/constant/app_colors.dart';
 import 'package:food_market_app/constant/app_sizes.dart';
 import 'package:food_market_app/constant/app_text_style.dart';
-import 'package:food_market_app/presentation/screens/home_screen.dart';
+import 'package:food_market_app/presentation/screens/auth_screens/sign_in_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -18,7 +18,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     super.initState();
     Timer(const Duration(seconds: 3), () {
-      Navigator.pushReplacementNamed(context, HomeScreen.route);
+      Navigator.pushReplacementNamed(context, SignInScreen.route);
     });
   }
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:food_market_app/presentation/screens/auth_screens/sign_in_screen.dart';
 import 'package:food_market_app/presentation/screens/home_screen.dart';
 import 'package:food_market_app/presentation/screens/splash_screen.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
       home: const SplashScreen(),
       routes: {
         HomeScreen.route: (context) => const HomeScreen(),
+        SignInScreen.route: (context) => const SignInScreen(),
       },
     );
   }
